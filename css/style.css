@@ -1,0 +1,155 @@
+/*margin=margen
+border=borde
+padding=
+width=ancho
+high=alto
+*/
+
+/*Se utiliza ALT + Z para que la pantalla se adapte al partirla en 2*/
+
+/*! ---FUENTE----*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*Reset de CSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*?------HEADER------*/
+
+.foto-whatsap {
+  position: fixed;
+  width: 6%;
+  height: 10%;
+  right: 0;
+  bottom: 10%;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  /*propiedad para sacarle el punto de ul*/
+  list-style: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: lightgreen;
+  padding: 10px;
+  width: 100%;
+}
+
+nav ul li a {
+  /*Esta propiedad le saca el subrayado a la palabra*/
+  text-decoration: none;
+}
+
+/*?------MAIN------*/
+main,
+section {
+  width: 100%;
+  box-sizing: border-box; /* Importante para incluir padding y border en el width total */
+}
+
+/* Contenedor Flex */
+.caja_contenedora {
+  background-color: cornsilk;
+  display: flex; /* Convierte el contenedor en un flex container */
+  justify-content: space-around; /* Distribuye las tarjetas horizontalmente con espacio alrededor */
+  align-items: flex-start; /* Alinea las cajas a la parte superior si tienen diferentes alturas */
+  flex-wrap: wrap; /* Importante: Permite que las cajas salten a la siguiente línea si no caben */
+  gap: 20px; /* Añade un espacio (gap) entre las cajas, más moderno que los márgenes */
+  width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  max-width: 1200px; /* Opcional: Limita el ancho máximo para que no se extienda demasiado en pantallas grandes */
+  margin: 0 auto; /* Opcional: Centra el contenedor si tiene un max-width */
+  padding: 20px; /* Un poco de padding alrededor del contenedor flex */
+  border: red;
+}
+
+/* Estilos para cada tarjeta de producto */
+.caja {
+  border: 1px dashed red; /* Tu borde original */
+  padding: 20px; /* Tu padding original */
+  margin: 0; /* Eliminamos el margin aquí porque usamos gap en el contenedor */
+
+  /* Flexbox para los items (cajas) */
+  display: flex;
+  flex-direction: column; /* Apila el contenido (h1, img, p, button) verticalmente */
+  align-items: center; /* Centra el contenido (imagen, texto, botón) dentro de cada caja */
+
+  /* Control de tamaño de las tarjetas */
+  flex-basis: 250px; /* Una base de ancho para las cajas (puedes ajustar) */
+  flex-grow: 1; /* Permite que las cajas crezcan si hay espacio */
+  flex-shrink: 1; /* Permite que las cajas se encojan si no hay suficiente espacio */
+  max-width: 300px; /* Asegura que no crezcan más allá de un tamaño razonable */
+  text-align: center; /* Centra el texto dentro de la caja*/
+}
+
+/* Estilos para las imágenes dentro de las cajas */
+.caja img {
+  max-width: 100%; /* Asegura que la imagen no desborde la caja */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+/* Estilos para el botón */
+.caja button {
+  margin-top: auto; /* Empuja el botón hacia abajo si las cajas tienen diferentes alturas de contenido */
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.caja button:hover {
+  background-color: #0056b3;
+}
+
+/* Opcional: Ajustes para el texto */
+.caja h1 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Opcional: estilos para los párrafos dentro de las cajas */
+.caja p {
+  font-size: 0.9em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.contenedor-seccion2 {
+  display: flex;
+  justify-content: space-around;
+  background-color: #a3a09b;
+  height: 300px;
+}
+
+.contenedor-seccion2 {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+.caja_contenedora p {
+  color: firebrick;
+}
+
+button {
+  position: relative;
+}
+
+/*?------FOOTER------ */
+
+.contenedor-footer {
+  height: 400px;
+  width: 100%;
+  background-color: #87be2179;
+}
