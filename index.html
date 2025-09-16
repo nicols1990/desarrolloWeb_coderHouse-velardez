@@ -7,22 +7,29 @@
 
     <!--css-->
     <!--se pone un punto para entrar a la carpeta del css-->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>De todo para todos</title>
+
+
 
 </head>
 
 <body>
     <!--Encabezado-->
     <header>
+        <h1>BesTElectriC</h1>
         <nav>
             <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/ingresar.html">Ingresar</a></li>
-                <li><a href="./pages/crear_cuenta.html">Crar Cuenta</a></li>
+                <div class="contenedor-menu">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./pages/productos.html">Productos</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </div>
+                <div class="contenedor-login">
+                    <li><a href="./pages/ingresar.html">Ingresar</a></li>
+                    <li><a href="./pages/crear_cuenta.html">Crear Cuenta</a></li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -30,23 +37,23 @@
 
     <!--Seccion principal de la pagina-->
     <main>
-        <section>
-            <div class="caja_contenedora">
+        <section class="contenedor-seccion">
+            <div class="contenedor-div-seccion">
                 <div class="caja">
-                    <h1>LAVARROPAS</h1>
-                    <img src="/img/lavarropas.webp" alt="lavarropa">
+                    <h2>LAVARROPAS</h2>
+                    <img src="img/lavarropas.webp" alt="lavarropa">
                     <p>lavarropas de 1200 rpm de centrifugado</p>
                     <button>Añadir al carrito</button>
                 </div>
                 <div class="caja">
-                    <h1>LAVARROPAS</h1>
-                    <img src="/img/lavarropas2.jpg" alt="lavarropa">
+                    <h2>LAVARROPAS</h2>
+                    <img src="img/lavarropas2.jpg" alt="lavarropa">
                     <p>lavarropas de 1000 rpm de centrifugado</p>
                     <button>Añadir al carrito</button>
                 </div>
                 <div class="caja">
-                    <h1>LAVARROPAS</h1>
-                    <img src="/img/notebook.avif" alt="lavarropa">
+                    <h2>LAVARROPAS</h2>
+                    <img src="img/notebook.avif" alt="lavarropa">
                     <p>notebook de 4 ram</p>
                     <button>Añadir al carrito</button>
                 </div>
@@ -71,22 +78,26 @@
 
     <!--Pie de pagina-->
     <footer>
-        <div class="contenedor-footer">
-            <div>
-                <ul>
-                    <li>Contactenos</li>
-                    <li>Formas de pago</li>
-                    <li>¿Queres trabajar con nosotros?</li>
-                    <li>Boton de arrepnetiento</li>
-                </ul>
+        <div class="footer-contenedor">
+            <h5>SEGUINOS</h5>
+            <div class="contenedor-logo">
+                <img class="logo" src="/img/logo-facebook.jpg" alt="pa">
+                <img class="logo" src="/img/logo-instagram.jpg" alt="">
             </div>
-            <form action=""></form>
-            <label for="password">Usuario: </label>
-            <input type="text">
-            <!--br es para salto de linea-->
-            <br>
-            <label for="password">Contraseña: </label>
-            <input type="password">
+            <div>
+                <div class="contenedor-menu-footer">
+                    <ul class="contendor-menu-end">
+                        <li>Queres ser parte de nosotros</li>
+                        <li>Formas de pago</li>
+                        <li>Formas de envio</li>
+                        <li>Terminos y condiciones</li>
+                    </ul>
+                </div>
+            </div>
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52503.70009873714!2d-58.6851710553019!3d-34.66780142560765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbf54729c9b2b%3A0x848c329d874d6114!2sB1712%20Castelar%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1755560674892!5m2!1ses-419!2sar"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     </footer>

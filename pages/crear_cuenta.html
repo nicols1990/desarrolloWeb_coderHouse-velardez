@@ -18,31 +18,64 @@
     <header>
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/productos.html">Productos</a></li>
-                <li><a href="../pages/contacto.html">Contacto</a></li>
-                <li><a href="../pages/ingresar.html">Ingresar</a></li>
-                <li><a href="../pages/crear_cuenta.html">Crar Cuenta</a></li>
+                <div class="contenedor-menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./productos.html">Productos</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </div>
+                <div class="contenedor-login">
+                    <li><a href="./ingresar.html">Ingresar</a></li>
+                    <li><a href="./crear_cuenta.html">Crear Cuenta</a></li>
+                </div>
             </ul>
         </nav>
     </header>
 
 
     <!--Seccion principal de la pagina-->
-    <main>
 
-    </main>
 
     <!--Pie de pagina-->
-    <footer>
-        <form action=""></form>
-        <label for="password">Usuario: </label>
-        <input type="text">
-        <!--br es para salto de linea-->
-        <br>
-        <label for="password">Contraseña: </label>
-        <input type="password">
-    </footer>
+
+    <section class="crearCuenta-contenedor">
+
+        <h2>CREAR CUENTA</h2>
+        <div class="crearCuenta">
+            <form action="/submit" method="post">
+                <label for="nombre">nombre</label>
+                <input type="text" name="" id="">
+
+                <label for="apellido">apellido</label>
+                <input type="text" name="text" id="text">
+
+                <label for="Genero">Genero:</label>
+                <select name="genero" id="genero">
+                    <option value="hombre">Hombre</option>
+                    <option value="mujer">Mujer</option>
+                </select>
+
+                <label for="Genero">Pais:</label>
+                <select name="" id="">
+                    <option value="">Argentina</option>
+                    <option value="">Uruguay</option>
+                    <option value="">Chile</option>
+                    <option value="">Bolivia</option>
+                </select>
+
+
+                <label for="contraseña">Contraseña</label>
+                <input type="password" name="password" id="password">
+
+                <label for="password">Confirmar Contraseña: </label>
+                <input type="password">
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+
+
+    </section>
 </body>
 
 </html>
